@@ -1,0 +1,26 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+
+  &_fz40 {
+    font-size: 40px;
+    font-weight: 500;
+
+    @media (max-width: 992px) {
+      font-size: 36px;
+    }
+  }
+
+  &_subtitle {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__footer {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--light-color);
+    text-align: start;
+  }
+}
