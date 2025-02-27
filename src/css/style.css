@@ -367,7 +367,7 @@
   }
 }
 .contact {
-  padding-top: 100px;
+  padding: 100px;
 }
 .contact__wrapper {
   margin-top: 80px;
@@ -494,7 +494,7 @@
     max-width: 960px;
   }
   .contact {
-    padding-top: 60px;
+    padding: 60px 0;
   }
   .contact__wrapper {
     grid-template-columns: repeat(2, 460px);
@@ -536,7 +536,6 @@
   }
 }
 .portfolio {
-  padding-top: 100px;
   padding-bottom: 130px;
 }
 .portfolio__carousel {
@@ -596,7 +595,6 @@
     max-width: 1140px;
   }
   .portfolio {
-    padding-top: 60px;
     padding-bottom: 90px;
   }
   .portfolio__carousel {
@@ -613,6 +611,7 @@
     width: 720px;
   }
   .portfolio__carousel {
+    margin-top: 45px;
     width: 626px;
   }
   .slick-prev, .slick-next {
@@ -631,7 +630,6 @@
     width: 540px;
   }
   .portfolio__carousel {
-    margin-top: 45px;
     width: 360px;
     text-align: center;
   }
@@ -1107,6 +1105,87 @@
   }
   .blog__descr {
     grid-row: 3;
+  }
+}
+.about {
+  margin-top: 100px;
+}
+.about__wrapper {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  grid-template-rows: 481px;
+  column-gap: 20px;
+}
+.about__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about .title_fz20 {
+  text-align: unset;
+  text-transform: unset;
+}
+
+@media (max-width: 1919px) {
+  .container {
+    max-width: 1140px;
+  }
+  .about__wrapper {
+    grid-template-columns: 550px 1fr;
+    grid-template-rows: 378px;
+  }
+  .about .title_fz20 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .about {
+    margin-top: 60px;
+  }
+  .about__wrapper {
+    margin-top: 60px;
+    grid-template-columns: 720px;
+    grid-template-rows: 412px minmax(290px, auto);
+    row-gap: 35px;
+    justify-content: center;
+  }
+  .about .title_fz20 {
+    font-size: 16px;
+  }
+  .about__img {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  .about__wrapper {
+    grid-template-columns: 720px;
+  }
+  .about__img {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .about__wrapper {
+    grid-template-columns: 340px;
+    grid-template-rows: 243px minmax(290px, auto);
+  }
+  .about__img {
+    padding: 0;
   }
 }
 
