@@ -3,7 +3,10 @@
   padding-bottom: 52px;
   background-color: var(--dark-color);
   color: var(--light-color);
-
+.title_fz16 {
+  color: var(--light-color);
+  text-align: start;
+}
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, minmax(70px, auto));

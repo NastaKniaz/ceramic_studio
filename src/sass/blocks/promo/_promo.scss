@@ -1,5 +1,4 @@
 .promo {
-  padding-top: 40px;
   position: relative;
 
   &__photo_main {
@@ -15,8 +14,9 @@
   }
 
   &__wrapper {
+    padding-top: 40px;
     display: grid;
-    grid-template-columns: 20px minmax(200px, 300px) 55px;
+    grid-template-columns: 20px minmax(200px, auto) 55px;
     grid-template-rows: repeat(2, auto);
     row-gap: 36px;
     justify-content: space-between;
@@ -47,6 +47,7 @@
     justify-self: center;
     grid-column: 2;
     grid-row: 1;
+    cursor: pointer;
 
     img {
       width: 100%;
@@ -72,6 +73,9 @@
     a {
       text-decoration: none;
       color: var(--dark-color);
+      &:hover{
+        border-bottom: 1px solid var(--dark-color);
+      }
     }
   }
 

@@ -1,7 +1,6 @@
-//@use "src/sass/modern-normalize.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet');
 
-
+@import "base/mixins";
 * {
   font-family: 'Barlow', sans-serif;
   margin: 0;
@@ -38,3 +37,7 @@
 @import "blocks/portfolio/media";
 @import "blocks/footer/footer";
 @import "blocks/footer/media";
+@import "blocks/catalog/catalog";
+@import "blocks/catalog/media";
+@import "blocks/blog/blog";
+@import "blocks/blog/media";

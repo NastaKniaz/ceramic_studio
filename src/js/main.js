@@ -29,7 +29,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint:769,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -37,7 +37,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint:577,
+                breakpoint: 577,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -47,5 +47,11 @@ $(document).ready(function () {
         ]
     });
 })
-    ;
+;
 
+$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
+    $(this)
+        .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+        .closest('div.container').find('div.catalog__items')
+        .removeClass('catalog__items_active').eq($(this).index()).addClass('catalog__items_active');
+});

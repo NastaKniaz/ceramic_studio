@@ -4,7 +4,6 @@
   }
 
   .promo {
-    padding-top: 50px;
 
     &__photo_main {
       width: 450px;
@@ -32,7 +31,6 @@
   }
 
   .promo {
-    padding-top: 50px;
 
     &__photo_main {
       display: none;
@@ -99,7 +97,7 @@
     }
 
     &__wrapper {
-      padding: 0 10px;
+      padding: 40px 10px 0 10px;
       row-gap: unset;
     }
     &__burger {

@@ -11,37 +11,9 @@
 <section class="promo">
     <div class="container">
                 <div class="promo__photo_main">
-                    <picture class="promo__photo"></picture>
                     <img src="src/img/main_page/1920px/potter.png" alt="photo">
                 </div>
-        <div class="promo__wrapper">
-            <div class="promo__burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="promo__icons">
-                <a href="#"><img src="src/icons/search-outline.svg" alt="search"></a>
-                <a href="#"><img src="src/icons/shopping-bag.svg" alt="bag"></a>
-            </div>
-            <div class="promo__logo">
-                <picture>
-                    <source srcset="src/logo/logo-tablet.svg" media="(max-width: 1919px)">
-                    <img src="src/logo/logo-desk.svg" alt="logo">
-                </picture>
-
-            </div>
-            <nav class="promo__menu">
-                <div class="">
-                    <a href="#">catalog</a>
-                </div>
-                <div class="">
-                    <a href="#">blog</a>
-                </div>
-                <div class=""><a href="#">about</a></div>
-            </nav>
-        </div>
-
+        <div id="header"></div>
         <div class="promo__content">
             <div class="promo__content-text">
                 Make your dream come true
@@ -108,45 +80,7 @@
         </div>
     </div>
 </section>
-
-<section class="contact">
-    <div class="container">
-        <h2 class="title title_fz40">get in touch</h2>
-        <div class="contact__wrapper">
-            <div class="contact__photo">
-                <picture>
-                    <source srcset="src/img/main_page/1200px/tea.png" media="(max-width: 1199px)">
-                    <source srcset="src/img/main_page/1920px/tea.png" media="(min-width: 1200px)">
-                    <img src="src/img/main_page/1920px/tea.png" alt="photo">
-                </picture>
-            </div>
-            <form class="contact__form">
-                <div class="contact__input">
-                    <label for="name">Name</label>
-                    <input required type="text" name="name" placeholder="Name" id="name">
-                </div>
-                <div class="contact__input contact__input-email">
-                    <label for="email">Email</label>
-                    <input required type="text" name="email" placeholder="Email" id="email">
-                </div>
-                <div class="contact__textarea">
-                    <label for="question">Your question</label>
-                    <textarea required name="message" placeholder="Question" id="question"></textarea>
-                </div>
-                <div class="contact__triggers">
-                    <div class="contact__policy">
-                        <input type="checkbox" name="terms" id="terms">
-                        <span>I agree with the <a href="#">terms</a></span>
-                    </div>
-                    <button class=" contact__button button">send request</button>
-                </div>
-                <div class="contact__icon">
-                    <img src="src/icons/vase.svg" alt="logo">
-                </div>
-            </form>
-        </div>
-    </div>
-</section>
+<div id="contact"></div>
 <section class="portfolio">
     <div class="container">
         <h2 class="title title_fz40">check out our works</h2>
@@ -185,71 +119,27 @@
 
     </div>
 </section>
-<footer class="footer">
-    <div class="container">
-        <div class="footer__wrapper">
-            <div class="footer__column">
-                <div class="title title__footer">newsletter</div>
-                <div class="footer__items">
-                    <div>Keep up to date with news and promotions</div>
-                    <form class="footer__form">
-                        <input class="email" required type="email" name="email" placeholder="Enter your e-mail">
-                        <div class="footer__policy">
-                            <input type="checkbox" name="terms">
-                            <span>I agree with the <a href="#">terms</a></span>
-                        </div>
-                        <button class="button">submit</button>
-                    </form>
-                </div>
-            </div>
+<div id="footer"></div>
 
-            <div class="footer__column footer__column-categories">
-                <div class="footer__links">
-                    <div class="footer__category">
-                        <div>
-                            <a href="#" class="title title__footer">discover</a>
-                        </div>
-                        <div class="footer__item">
-                            <a href="#">About Us</a>
-                            <a href="#">Blog</a>
-                        </div>
-                    </div>
-                    <div class="footer__category">
-                        <div>
-                            <a href="#" class="title title__footer">shopping</a>
-                        </div>
-                        <div class="footer__item">
-                            <a href="#">Catalog</a>
-                        </div>
-                    </div>
-                    <div class="footer__category">
-                        <div>
-                            <a href="#" class="title title__footer">information</a>
-                        </div>
-                        <div class="footer__item">
-                            <a href="#">Catalog</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer__column footer__column-social">
-                <div class="title title__footer">follow us</div>
-                <div class="footer__social">
-                    <a href="#"><img src="src/icons/facebook.svg" alt="facebook"></a>
-                    <a href="#"><img src="src/icons/instagram.svg" alt="instagram"></a>
-                    <a href="#"><img src="src/icons/pinterest.svg" alt="pinterest"></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer__copyright">
-            © Copyright 2025, Ceramic soul
-        </div>
-    </div>
-</footer>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
+<script>
+    $(function(){
+        $("#header").load("header.html");
+    });
+</script>
+<script>
+    $(function(){
+        $("#contact").load("contact.html");
+    });
+</script>
+<script>
+    $(function(){
+        $("#footer").load("footer.html");
+    });
+</script>
 <script type="module" src="/src/js/main.js"></script>
+
 </body>
 </html>
