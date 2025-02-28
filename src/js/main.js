@@ -1,4 +1,4 @@
-import '../sass/style.scss'
+
 import {setupCounter} from '../counter.js'
 
 
@@ -46,12 +46,23 @@ $(document).ready(function () {
             }
         ]
     });
-})
-;
 
-$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
-    $(this)
-        .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
-        .closest('div.container').find('div.catalog__items')
-        .removeClass('catalog__items_active').eq($(this).index()).addClass('catalog__items_active');
+    $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
+        $(this)
+            .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+            .closest('div.container').find('div.catalog__items')
+            .removeClass('catalog__items_active').eq($(this).index()).addClass('catalog__items_active');
+    });
+
+    const promo__burger = document.querySelector('.promo__burger'),
+        menu = document.querySelector('.menu'),
+        closeElem = document.querySelector('.menu__close');
+
+    promo__burger.addEventListener('click', () => {
+        menu.classList.add('active');
+    });
+
+    closeElem.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
 });

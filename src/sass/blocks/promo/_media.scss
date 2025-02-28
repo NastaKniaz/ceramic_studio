@@ -60,7 +60,6 @@
   }
 
   .promo {
-
     &__content {
       grid-template-columns: 400px;
       grid-template-rows: repeat(2, minmax(50px, auto)) 50px;
@@ -92,7 +91,7 @@
 
   .promo {
 
-    &__menu {
+    &__categories {
       display: none;
     }
 

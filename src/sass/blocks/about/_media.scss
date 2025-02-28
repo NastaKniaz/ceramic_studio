@@ -44,14 +44,14 @@
 
 @media (max-width: 768px) {
   .container {
-    width: 720px;
+    width: 540px;
   }
   .about{
     &__wrapper{
-      grid-template-columns: 720px;
+      grid-template-columns: 1fr;
     }
     &__img {
-      padding: 0 60px;
+      padding: 0 40px;
     }
   }
 }

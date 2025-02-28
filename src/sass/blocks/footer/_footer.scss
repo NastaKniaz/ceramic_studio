@@ -3,10 +3,12 @@
   padding-bottom: 52px;
   background-color: var(--dark-color);
   color: var(--light-color);
-.title_fz16 {
-  color: var(--light-color);
-  text-align: start;
-}
+
+  .title_fz16 {
+    color: var(--light-color);
+    text-align: start;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, minmax(70px, auto));
@@ -73,7 +75,7 @@
 
   &__category {
     display: grid;
-    grid-template-columns: minmax(70px, 100px);
+    grid-template-columns: minmax(70px, auto);
   }
 
   &__item {
@@ -83,7 +85,15 @@
     grid-template-rows: repeat(2, 19px);
     grid-auto-rows: 19px;;
     row-gap: 20px;
+
+    a {
+      &:hover {
+        text-decoration: underline;
+        color: var(--light-color);
+      }
+    }
   }
+
   a {
     text-decoration: none;
     color: var(--light-color);

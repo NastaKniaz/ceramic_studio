@@ -8,9 +8,11 @@
     <title>Ceramic Studio</title>
 </head>
 <body>
-<div class="container">
-    <div id="header"></div>
-</div>
+<section class="promo">
+    <div class="container">
+        <div id="header"></div>
+    </div>
+</section>
 <section class="about">
     <div class="container">
         <h2 class="title title_fz40">where it all began</h2>
@@ -19,7 +21,8 @@
                 <picture>
                     <source srcset="src/img/about/mob/crafts.png" media="(max-width: 576px)">
                     <source srcset="src/img/about/tablet/crafts.png" media="(max-width: 768px)">
-                    <source srcset="src/img/about/1200px/crafts.png" media="(max-width: 1199px">  <img src="/src/img/about/1920px/crafts.png" alt="photo">
+                    <source srcset="src/img/about/1200px/crafts.png" media="(max-width: 1199px">
+                    <img src="/src/img/about/1920px/crafts.png" alt="photo">
                 </picture>
             </div>
             <div class="about__text">
@@ -43,30 +46,31 @@
                     beautiful and functional, adding warmth and authenticity to any space.
                 </div>
             </div>
-
         </div>
+
     </div>
 </section>
 <div id="contact"></div>
+<section class="location">
+    <div class="container">
+        <h2 class="title title_fz40">Find us</h2>
+        <div class="location__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9779.659040975925!2d21.0077157813842!3d52.208596499207495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecdc656753987%3A0xfcf2471166606f89!2sWesky%20Studio%20Pracownia%20Ceramiczna!5e0!3m2!1sru!2spl!4v1740735294868!5m2!1sru!2spl"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
 <div id="footer"></div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
 <script>
-    $(function () {
-        $("#header").load("header.html");
-    });
+    $("#header").load("header.html");
+    $("#contact").load("contact.html");
+    $("#footer").load("footer.html");
 </script>
-<script>
-    $(function () {
-        $("#contact").load("contact.html");
-    });
-</script>
-<script>
-    $(function () {
-        $("#footer").load("footer.html");
-    });
-</script>
+<script type="module" src="/src/js/style.js"></script>
 <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>
