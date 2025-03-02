@@ -5,6 +5,7 @@ import { defineConfig } from 'vite'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
+    base:  '/ceramic_studio',
         optimizeDeps: {
             include: ['jquery', 'slick-carousel'],
         },
