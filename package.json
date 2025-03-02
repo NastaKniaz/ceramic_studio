@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "jquery": "^3.7.1",
     "sass": "^1.85.0",
     "slick-carousel": "^1.8.1",
     "vite": "^6.1.0"

@@ -1,0 +1,84 @@
+@media (max-width: 1919px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .contact {
+    padding-top: 60px;
+    &__photo {
+      height: 342px;
+    }
+
+    &__wrapper {
+      grid-template-columns: repeat(2, 550px);
+      justify-content: space-between;
+      column-gap: unset;
+    }
+
+    &__form {
+      grid-template-columns: 300px 85px;
+      grid-template-rows: 48px 48px 132px 88px;
+    }
+
+    &__input-email {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &__textarea {
+      grid-row: 3;
+    }
+
+    &__triggers, &__icon {
+      grid-row: 4;
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+  .contact {
+
+    &__photo {
+      display: none;
+    }
+
+    &__wrapper {
+      margin-top: 45px;
+      grid-template-columns: 1fr;
+      align-content: center;
+    }
+
+    &__form {
+      margin-top: 0;
+      grid-template-columns: 300px 85px;
+      grid-template-rows: 48px 48px 132px 88px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .contact {
+    .title_fz40 {
+      font-size: 32px;
+    }
+    &__icon {
+      display: none;
+    }
+
+    &__form {
+      grid-template-columns:1fr;
+      grid-template-rows: 48px 48px 132px 88px;
+      justify-content: center;
+    }
+  }
+}

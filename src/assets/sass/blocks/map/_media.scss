@@ -1,0 +1,47 @@
+@media (max-width: 1919px) {
+  .container {
+    max-width: 1140px;
+  }
+  .location {
+    padding-top: 60px;
+
+    &__map {
+      padding-top: 60px;
+
+      iframe {
+        width: 663px;
+        height: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+  .location {
+    &__map {
+      iframe {
+        width: 663px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .location {
+    &__map {
+      iframe {
+        width: 100%;
+        height: 206px;
+      }
+    }
+  }
+}

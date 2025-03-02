@@ -5,6 +5,9 @@ import { defineConfig } from 'vite'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
+        optimizeDeps: {
+            include: ['jquery', 'slick-carousel'],
+        },
     build: {
         rollupOptions: {
             input: {
@@ -13,5 +16,5 @@ export default defineConfig({
                 blog: resolve(__dirname, 'blog.html'),
             },
         },
-    },
+    }
 })
